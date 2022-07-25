@@ -1,13 +1,18 @@
 import '../App.css';
 import CardDisplay from './CardDisplay';
-import Card from './CardDisplay';
 import NavBar from './NavBar';
+import NotesForm from './NotesForm';
 
 function App() {
   return (
-    <div >{/*className="App"*/}
+    <div style={{backgroundColor: '#eee'}}>{/*className="App"*/}
       <NavBar />
-      <CardDisplay />
+      <div className='all-cards'>
+        <NotesForm />
+        <br />
+      
+        <CardDisplay />
+      </div>
     </div>
   );
 }
