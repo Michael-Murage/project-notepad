@@ -1,18 +1,60 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Form } from 'react-bootstrap'
 import { randomColor } from './randomColor'
+
 import useVal from './useVal'
 
-function NotesForm() {
+function NotesForm({ notes, setNotes, fetchData}) {
     const {val, setVal} = useVal()
+    const [testNote, setTestNote] = useState([])
+    
+    useEffect(()=>{
+        fetchData()        
+    }, [testNote])
+
+    const submitNote =(e)=>{
+        e.preventDefault()
+        fetchData()
+        fetch('http://localhost:7000/notes', {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                Accept: "application/json"
+            },
+            body: JSON.stringify({
+                title: val.title,
+                content: val.content
+            })
+        })
+        .then(resp=>resp.json())
+        .then(data=>{
+            console.log(data);
+            
+        })
+        .finally((data) => {
+            setTestNote(['sup'])
+        })
+
+
+        document.querySelector('.card').reset()
+    }
+
+    const handleChange =(e)=>{
+        if(e.target.id === 'title-input'){
+            val.title = e.target.value
+        }else if(e.target.id === 'textarea-input'){
+            val.content = e.target.value
+        }
+    }
+
     return (
-        <Form className='card-form card' style={{width: '18rem', backgroundColor: randomColor(), marginTop: '2px'}}>
+        <Form className='card-form card' onSubmit={submitNote} style={{width: '18rem', backgroundColor: randomColor(), marginTop: '2px'}}>
                 <div id='title-form'>
                     <h2>Title: </h2>
-                    <input type='text' id='title-input' placeholder='Enter text' value={val.title}/>
+                    <input type='text' id='title-input' placeholder='Enter text' onChange={handleChange}/>
                 </div>
                 <div id='textarea-form'>
-                    <textarea placeholder='Enter note here...' id='textarea-input' value={val.content}>
+                    <textarea placeholder='Enter note here...' id='textarea-input' onChange={handleChange}>
                         
                     </textarea>
                 </div>
