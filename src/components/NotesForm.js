@@ -9,7 +9,8 @@ function NotesForm({ fetchData }) {
     const [testNote, setTestNote] = useState([])
     
     useEffect(()=>{
-        fetchData()        
+        fetchData()
+        // eslint-disable-next-line    
     }, [testNote])
 
     const submitNote =(e)=>{

@@ -29,7 +29,7 @@ function CardDisplay({ notes, fetchData }) {
 
   return (
     <>
-        <div className='card-container'>
+        <div className='card-container container-fluid'>
             {notesDisp}
         </div>  
     </>
