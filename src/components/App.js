@@ -1,8 +1,9 @@
 import '../App.css';
 import CardDisplay from './CardDisplay';
+import useDisplay from './hooks/useDisplay';
 import NavBar from './NavBar';
 import NotesForm from './NotesForm';
-import useDisplay from './useDisplay';
+
 
 function App() {
   const { notes, setNotes, fetchData } = useDisplay()

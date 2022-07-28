@@ -1,5 +1,5 @@
 import React from 'react'
-import { randomColor } from './randomColor'
+import { randomColor } from './utilities/randomColor'
 
 function About() {
   return (

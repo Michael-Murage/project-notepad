@@ -1,6 +1,6 @@
 import React from 'react'
 import Card from './Card'
-import { randomColor } from './randomColor'
+import { randomColor } from './utilities/randomColor'
 
 
 function CardDisplay({ notes, fetchData }) {

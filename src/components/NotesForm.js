@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { Form } from 'react-bootstrap'
-import { randomColor } from './randomColor'
+import { randomColor } from './utilities/randomColor'
 
-import useVal from './useVal'
+import useVal from './hooks/useVal'
 
 function NotesForm({ notes, setNotes, fetchData}) {
     const {val, setVal} = useVal()
