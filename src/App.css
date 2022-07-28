@@ -3,12 +3,12 @@
   margin-left: 1.5px;
   margin-right: 1.5px;
 }
-#title-input, #textarea-input{
+#title-input, #textarea-input, .title-input, .textarea-input{
   width: 60%;
   border-radius: 0.5rem;
   background-color: transparent;
 }
-#textarea-input{
+#textarea-input, .textarea-input{
   resize: none;
   align-items: center;
   width: 90%;
@@ -18,18 +18,18 @@
   justify-content: space-evenly;
   margin-top: 2px;
 }
-#textarea-form{
+#textarea-form, .textarea-form{
   display: flex;
   margin-bottom: 2px;
   justify-content: center;
   margin-top: 2px;
 }
-#submit-input{
+#submit-input, .submit-input{
   width: 30%;
   background-color: transparent;
   margin-bottom: 2px;
 }
-#submit-form{
+#submit-form, .submit-form{
   display: flex;
   justify-content: center;
 }

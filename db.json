@@ -1,49 +1,39 @@
 {
   "notes": [
     {
-      "title": "note number two",
-      "content": "Nothing to see here",
-      "id": 2
-    },
-    {
-      "title": "Read on classes",
-      "content": "Read on class components in react",
-      "id": 5
-    },
-    {
-      "title": "reload",
-      "content": "reload kinda working",
-      "id": 28
+      "title": "trigger refresh ",
+      "content": "nothing",
+      "id": 1
     },
     {
       "title": "Node",
-      "content": "nn",
-      "id": 31
+      "content": "node",
+      "id": 2
     },
     {
-      "title": "dweafw",
-      "content": "grw",
-      "id": 36
+      "title": "revisit ruby",
+      "content": "revisit ruby",
+      "id": 3
     },
     {
       "title": "Read on classes",
-      "content": "had",
-      "id": 42
+      "content": "React class component(s)",
+      "id": 4
     },
     {
-      "title": "glass",
-      "content": "class",
-      "id": 43
+      "title": "<h></h1>",
+      "content": "header element",
+      "id": 5
     },
     {
-      "title": "okay",
-      "content": "okay",
-      "id": 51
+      "title": "<p>",
+      "content": "paragraph tag",
+      "id": 6
     },
     {
-      "title": "hhh",
-      "content": "bbb",
-      "id": 53
+      "title": "Revisit javascript",
+      "content": "tests",
+      "id": 7
     }
   ]
 }
