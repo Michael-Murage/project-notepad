@@ -8,11 +8,18 @@ function useDisplay() {
     
     
 
-     async function fetchData(){
-        fetch('http://localhost:7000/notes')
-        .then(resp=>resp.json())
-        .then(data=>setNotes(data))
-     }
+     const fetchData = async ()=>{
+        try{
+            const response = await fetch('http://localhost:7000/notes');
+            if(response.ok){
+            const jsonResp = await response.json();
+            setNotes(jsonResp)
+            }
+         }
+         catch(error){
+            console.log(error);
+         }
+        }
 
      useEffect(()=>{
         fetchData()

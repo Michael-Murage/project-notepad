@@ -86,3 +86,9 @@
   height: 1.5rem;
   width: 1.5rem;
 }
+.none{
+  display: none;
+}
+.block{
+  display: block;
+}

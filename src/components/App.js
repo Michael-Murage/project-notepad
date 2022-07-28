@@ -6,7 +6,8 @@ import useDisplay from './useDisplay';
 
 function App() {
   const { notes, setNotes, fetchData } = useDisplay()
-  console.log(notes);
+  
+  
   return (
     <div style={{backgroundColor: '#eee'}}>
       <NavBar />
