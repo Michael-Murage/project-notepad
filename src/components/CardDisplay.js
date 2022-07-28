@@ -22,7 +22,7 @@ function CardDisplay({ notes, fetchData }) {
     }
     
     const notesDisp = noten.map((note, index)=>{ 
-        return <Card key={note?.id || index} fetchData={fetchData} note={note} index={index} randomColor={randomColor} deleteNote={deleteNote}/>
+        return <Card key={note?.id || index} fetchData={fetchData} note={note} randomColor={randomColor} deleteNote={deleteNote}/>
     })
 
     

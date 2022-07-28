@@ -4,8 +4,8 @@ import { randomColor } from './utilities/randomColor'
 
 import useVal from './hooks/useVal'
 
-function NotesForm({ notes, setNotes, fetchData}) {
-    const {val, setVal} = useVal()
+function NotesForm({ fetchData }) {
+    const { val } = useVal()
     const [testNote, setTestNote] = useState([])
     
     useEffect(()=>{
@@ -31,7 +31,7 @@ function NotesForm({ notes, setNotes, fetchData}) {
             console.log(data);
             
         })
-        .finally((data) => {
+        .finally(() => {
             setTestNote(['sup'])
         })
 

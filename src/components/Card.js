@@ -62,7 +62,11 @@ function Card({ note, randomColor, deleteNote, fetchData }) {
                     <h2 onClick={changeTitle} className={conditionIsNone + ' ' + note?.id}>{!note.title ? 'Loading...' : note.title}</h2>
                     {/* togglling between the element above and the element below based on click to edit */}
                     <Form onSubmit={submitEdit} >
-                        <input onChange={controlEdit} ref={focusRef} type='text' onBlur={offFocus} value={edit[0]} className={conditionNotNone + ' ' + note?.id + ' ' + 'title-input'} autoFocus />
+                        <input onChange={controlEdit} 
+                        ref={focusRef} type='text' 
+                        onBlur={offFocus} value={edit[0]} 
+                        className={conditionNotNone + ' ' + note?.id + ' title-input'} 
+                        autoFocus />
                     </Form>
                     <button className='delete-note' onClick={() => deleteNote(note?.id)}>X</button>
                 </div>

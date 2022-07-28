@@ -1,7 +1,6 @@
 import '../App.css';
 import CardDisplay from './CardDisplay';
 import useDisplay from './hooks/useDisplay';
-import NavBar from './NavBar';
 import NotesForm from './NotesForm';
 
 
