@@ -1,38 +1,13 @@
 {
   "notes": [
     {
-      "title": "trigger refresh ",
-      "content": "nothing",
-      "id": 1
-    },
-    {
-      "title": "Node",
-      "content": "node",
-      "id": 2
-    },
-    {
-      "title": "revisit ruby",
-      "content": "revisit ruby",
-      "id": 3
-    },
-    {
-      "title": "Read on classes",
-      "content": "React class component(s)",
-      "id": 4
-    },
-    {
-      "title": "<h></h1>",
-      "content": "header element",
-      "id": 5
-    },
-    {
-      "title": "<p>",
-      "content": "paragraph tag",
+      "title": "Add title...",
+      "content": "Add content...",
       "id": 6
     },
     {
-      "title": "Revisit javascript",
-      "content": "tests",
+      "title": "You can edit this note",
+      "content": "Or add note in the form above👆\n",
       "id": 7
     }
   ]
