@@ -48,6 +48,8 @@
   position: fixed;
   width: 97vw;
   z-index: 1;
+  display: flex;
+  justify-content: space-between;
 }
 .card-container, .card-form{
   -webkit-box-shadow: 0px 5px 5px 4px rgba(0,0,0,0.49);

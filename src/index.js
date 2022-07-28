@@ -7,11 +7,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import About from './components/About';
+import NavBar from './components/NavBar';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
+      <NavBar/>
       <Routes>
         <Route exact path='/' element={<App />}/>
         <Route exact path='/about' element={<About/>}/>

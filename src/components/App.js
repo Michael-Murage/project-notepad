@@ -11,7 +11,6 @@ function App() {
   
   return (
     <div style={{backgroundColor: '#eee'}}>
-      <NavBar />
       <div className='all-cards'>
         <NotesForm notes={notes} setNotes={setNotes} fetchData={fetchData}/>
         <br />
