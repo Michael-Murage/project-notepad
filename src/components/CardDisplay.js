@@ -7,7 +7,7 @@ function CardDisplay({ notes, fetchData }) {
     let noten = [...notes].reverse()
 
     function deleteNote(id){
-        fetch(`http://localhost:7000/notes/${id}`, {
+        fetch(`https://project-notepad-json.herokuapp.com/notes/${id}`, {
             method: 'DELETE',
             headers: {
                 "Content-Type": "application/json"
