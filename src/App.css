@@ -101,11 +101,10 @@
   font-weight: 400;
   color: #555;
   font-family: Ubuntu, Helvetica, sans-serif;
-  padding: 0 0.5rem 0 0.5rem;
+  /* padding: 0 0.5rem 0 0.5rem; */
 }
 #home-link.active, #about-link.active, #links.active{
   background-color: lightgrey;
-  height: 100%;
   width: fit-content;
   color: burlywood;
 }
