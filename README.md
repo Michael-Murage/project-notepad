@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# PROJECT NOTEPAD
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Deployed link: https://react-project-notepad.herokuapp.com
 
-## Available Scripts
+This is a rather minimal colourful version of a very capable notepad app. The 
+thought process behind it is being able to note down your editable to do list or being able to jot down something for later reference.
 
-In the project directory, you can run:
+The app is web based and is built mainly using React.js. Technically,
+ it performs the basic CRUD functionalities and stores information in a json file (hosted separately).
 
-### `npm start`
+ ## What works?
+ You can basically add, edit or delete a note
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+ ## What doesn't work? (Limitations)
+ 1. Having hosted the json server on Heroku, the data, after sometime resets to its original value. That is, the notes written by a user will reset to the very first note the user saw when accessing the app.
+ 
+ 2. As an app in production, the "database" is centralised for everyone using the application. Meaning what I write/edit/delete you'll see and vice-versa. For this, there will be a feature added, that will ensure your own private experience (more on this later).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+ ## Installation
+Ensure you have npm installed on your computer.
 
-### `npm test`
+ > Fork this repository and clone it to your computer.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+ > In the folder where you've cloned it, cd into the cloned project
 
-### `npm run build`
+ > If your terminal wasn't open before this, open it and run the commands below:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+ ```
+    npm install
+    npm start
+ ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+ This process will enable you to have your the project in your local environment but the link above (deployed link) should function similarly to running npm start.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+ ## Future Features
+ 1. In the near future (from the time of writing this), I plan to add a user authentication page such that you would need to login so as to ensure what your noting down is yours and yours alone. A solution to limitation number 2.
 
-### `npm run eject`
+2. A bit more research and experimentation in finding a stable host for the json file or changing the code so that it stores in a device's internal memory (which is even more reliable).
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# License
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Copyright (c) 2022 Michael Murage
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Michael Murage (individual), owns this Educational Content. However, I support the development and availability of educational materials in the public domain. Therefore, I grant users set forth in this repository certain rights to reuse, build upon and share such Educational Content subject to the terms of the Educational Content License set forth [here](http://learn.co/content-license) (http://learn.co/content-license). You must read carefully the terms and conditions contained in the Educational Content License as such terms govern access to and use of the Educational Content.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Michael Murage is willing to allow you access to and use of the Educational Content only on the condition that you accept all of the terms and conditions contained in the Educational Content License set forth [here](http://learn.co/content-license) (http://learn.co/content-license).  By accessing and/or using the Educational Content, you are agreeing to all of the terms and conditions contained in the Educational Content License.  If you do not agree to any or all of the terms of the Educational Content License, you are prohibited from accessing, reviewing or using in any way the Educational Content.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# ENJOY
