@@ -10,7 +10,7 @@ function useDisplay() {
 
      const fetchData = async ()=>{
         try{
-            const response = await fetch('https://project-notepad-json.herokuapp.com/notes');
+            const response = await fetch('http://localhost:7000/notes');
             if(response.ok){
             const jsonResp = await response.json();
             setNotes(jsonResp)

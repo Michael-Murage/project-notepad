@@ -16,10 +16,10 @@ function About() {
             <h2>React router dom</h2>
                 <p> Version 6.</p>
         </div>
-        <div className='card-form card about-form' style={{width: '18rem', backgroundColor: randomColor(), marginTop: '2px'}}>
+        {/* <div className='card-form card about-form' style={{width: '18rem', backgroundColor: randomColor(), marginTop: '2px'}}>
             <h2>Time of creation:</h2>
                 <p> July 2022.</p>
-        </div>
+        </div> */}
     </div>
   )
 }

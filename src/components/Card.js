@@ -27,7 +27,7 @@ function Card({ note, randomColor, deleteNote, fetchData }) {
         let id = parseFloat(e.target?.id)
         console.log(id);
         setIsNone(false)
-        fetch(`https://project-notepad-json.herokuapp.com/notes/${id}`,{
+        fetch(`http://localhost:7000/notes/${id}`,{
             method: 'PATCH',
             headers: {
                 'Content-Type': 'application/json',

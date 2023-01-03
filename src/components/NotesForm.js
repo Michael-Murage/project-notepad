@@ -16,7 +16,7 @@ function NotesForm({ fetchData }) {
     const submitNote =(e)=>{
         e.preventDefault()
         fetchData()
-        fetch('https://project-notepad-json.herokuapp.com/notes', {
+        fetch('http://localhost:7000/notes', {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

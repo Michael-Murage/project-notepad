@@ -1,6 +1,6 @@
 # PROJECT NOTEPAD
 
-Deployed link: https://react-project-notepad.herokuapp.com
+<!-- Deployed link: https://react-project-notepad.herokuapp.com -->
 
 This is a rather minimal colourful version of a very capable notepad app. The 
 thought process behind it is being able to note down your editable to do list or being able to jot down something for later reference.
@@ -8,34 +8,45 @@ thought process behind it is being able to note down your editable to do list or
 The app is web based and is built mainly using React.js. Technically,
  it performs the basic CRUD functionalities and stores information in a json file (hosted separately).
 
- ## What works?
- You can basically add, edit or delete a note
+ <img src="public/images/image1.png" alt="screenshot" width="600px" height="300px">
+ <img src="public/images/image2.png" alt="screenshot" width="600px" height="300px">
+ <img src="public/images/image3.png" alt="screenshot" width="600px" height="300px">
+ <img src="public/images/image4.png" alt="screenshot" width="600px" height="300px">
+ <img src="public/images/image5.png" alt="screenshot" width="600px" height="300px">
 
- ## What doesn't work? (Limitations)
- 1. Having hosted the json server on Heroku, the data, after sometime resets to its original value. That is, the notes written by a user will reset to the very first note the user saw when accessing the app.
- 
- 2. As an app in production, the "database" is centralised for everyone using the application. Meaning what I write/edit/delete you'll see and vice-versa. For this, there will be a feature added, that will ensure your own private experience (more on this later).
-
- ## Installation
+  ## Installation
 Ensure you have npm installed on your computer.
 
- > Fork this repository and clone it to your computer.
+ Fork and clone this repository to your computer.
 
- > In the folder where you've cloned it, cd into the cloned project
+ In the folder where you've cloned it, cd into the cloned project
 
- > If your terminal wasn't open before this, open it and run the commands below:
+ Open a terminal instance within the project and run the commands below:
 
  ```
     npm install
     npm start
  ```
+ Open another terminal instance within the project and run the command below:
+ ```
+    npm run server
+ ```
 
- This process will enable you to have your the project in your local environment but the link above (deployed link) should function similarly to running npm start.
+ ## What works?
+ You can basically add, edit or delete a note
 
- ## Future Features
- 1. In the near future (from the time of writing this), I plan to add a user authentication page such that you would need to login so as to ensure what your noting down is yours and yours alone. A solution to limitation number 2.
+ ## What doesn't work? (Limitations)
+ <!-- 1. Having hosted the json server on Heroku, the data, after sometime resets to its original value. That is, the notes written by a user will reset to the very first note the user saw when accessing the app. -->
+ 
+ 1. During production, the "database" is centralised for everyone using the application. Meaning what I write/edit/delete you'll see and vice-versa. For this, user authentication will separate between users.
 
-2. A bit more research and experimentation in finding a stable host for the json file or changing the code so that it stores in a device's internal memory (which is even more reliable).
+<!-- 
+ This process will enable you to have your the project in your local environment but the link above (deployed link) should function similarly to running npm start. -->
+
+ <!-- ## Future Features -->
+ <!-- 1. In the near future (from the time of writing this), I plan to add a user authentication page such that you would need to login so as to ensure what your noting down is yours and yours alone. A solution to limitation number 2. -->
+
+<!-- 2. A bit more research and experimentation in finding a stable host for the json file or changing the code so that it stores in a device's internal memory (which is even more reliable). -->
 
 # License
 
