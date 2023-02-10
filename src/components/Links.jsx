@@ -1,5 +1,3 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
 import { randomColor } from './utilities/randomColor'
 
 function Links() {
