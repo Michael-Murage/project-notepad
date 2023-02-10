@@ -15,7 +15,7 @@ function CardDisplay({ notes, fetchData }) {
         })
         .then(resp=>resp.json())
         .then(data=>{
-            console.log(data)
+            // console.log(data)
             fetchData()
         })
         .catch(error=>console.log(error.message))

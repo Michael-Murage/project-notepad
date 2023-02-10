@@ -25,7 +25,7 @@ function Card({ note, randomColor, deleteNote, fetchData }) {
     function submitEdit(e){
         e.preventDefault()
         let id = parseFloat(e.target?.id)
-        console.log(id);
+        // console.log(id);
         setIsNone(false)
         fetch(`http://localhost:7000/notes/${id}`,{
             method: 'PATCH',
