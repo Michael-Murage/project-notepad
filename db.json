@@ -1,9 +1,29 @@
 {
   "notes": [
     {
-      "title": "You can edit this note",
-      "content": "Or add note in the form above👆\n",
-      "id": 7
+      "title": "",
+      "content": "\\profile editing * 4 + students performance posting",
+      "id": 1
+    },
+    {
+      "title": "",
+      "content": "allow for enhancement - both official and officer",
+      "id": 2
+    },
+    {
+      "title": "",
+      "content": "provide list of students who have been allocated",
+      "id": 3
+    },
+    {
+      "title": "",
+      "content": "show schools student has been to in the past",
+      "id": 4
+    },
+    {
+      "title": "",
+      "content": "\\display a total of money spent on allocations at the bottom",
+      "id": 8
     }
   ]
 }

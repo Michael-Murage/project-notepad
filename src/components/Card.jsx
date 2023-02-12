@@ -57,7 +57,7 @@ function Card({ note, randomColor, deleteNote, fetchData }) {
     }
 
   return (
-    <div className='card'  style={{width: '18rem', backgroundColor: randomColor()}}>
+    <div className='card'  style={{width: 'auto', backgroundColor: randomColor()}}>
                 <div style={{display: 'flex', justifyContent: 'space-between'}}>
                     <h2 onClick={changeTitle} className={conditionIsNone + ' ' + note?.id}>{!note.title ? 'Loading...' : note.title}</h2>
                     {/* togglling between the element above and the element below based on click to edit */}
