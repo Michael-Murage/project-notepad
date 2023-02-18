@@ -14,7 +14,10 @@
   align-items: center;
   width: 90%;
 }
-#textarea-input:hover, #title-input:hover{
+.title-input{
+    margin-left: 1em;
+}
+#textarea-input:hover, #title-input:hover, .textarea-input:hover, .title-input:hover{
     background-color: transparent;
     box-shadow: 0 0 2em #646cffaa;
 }

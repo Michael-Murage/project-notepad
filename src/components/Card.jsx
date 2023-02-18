@@ -4,8 +4,8 @@ import { Form } from 'react-bootstrap'
 function Card({ note, randomColor, deleteNote, fetchData }) {
     const [isNone, setIsNone] = useState(false)
     const [edit, setEdit] = useState([note.title, note.content])
-    let conditionIsNone = isNone ? 'none' : 'block'
-    let conditionNotNone = !isNone ? 'none' : 'block'
+    let conditionIsNone = isNone ? 'none' : ''
+    let conditionNotNone = !isNone ? 'none' : ''
     const focusRef = useRef()
 
     useEffect(()=>{
@@ -58,17 +58,17 @@ function Card({ note, randomColor, deleteNote, fetchData }) {
 
   return (
     <div className='card'  style={{width: 'auto', backgroundColor: randomColor()}}>
-                <div style={{display: 'flex', justifyContent: 'space-between'}}>
+                <div style={{display: 'flex'}}>
                     <h2 onClick={changeTitle} className={conditionIsNone + ' ' + note?.id}>{!note.title ? '<no header>' : note.title}</h2>
                     {/* togglling between the element above and the element below based on click to edit */}
                     <Form onSubmit={submitEdit} >
                         <input onChange={controlEdit} 
                         ref={focusRef} type='text' 
                         onBlur={offFocus} value={edit[0]} 
-                        className={conditionNotNone + ' ' + note?.id + ' title-input'} 
+                        className={conditionNotNone + ' ' + note?.id + ' title-input '} 
                         autoFocus />
                     </Form>
-                    <button className='delete-note text-danger' title='Delete note' onClick={() => deleteNote(note?.id)}>X</button>
+                    <button className='delete-note text-danger ml-auto' title='Delete note' onClick={() => deleteNote(note?.id)}>X</button>
                 </div>
 
                 <p className={conditionIsNone + ' ' + note?.id} onClick={changeTitle}>{!note.content ? '<no content>' : note.content}</p>

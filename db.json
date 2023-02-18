@@ -1,13 +1,13 @@
 {
   "notes": [
     {
-      "title": "",
-      "content": "npm init =>\nnpm install -D typescript =>\nnpx tsc --init =>\nnpm install typegoose/typegoose bcryptjs config cookie-parser dotenv express jsonwebtoken lodash mongoose redis ts-node-dev zod cors =>",
+      "title": "Veggies",
+      "content": "Grab some vegetables in the evening",
       "id": 1
     },
     {
-      "title": "",
-      "content": "Gebeya profile",
+      "title": "You can edit this note",
+      "content": "Or add note in the form above ☝️",
       "id": 2
     }
   ]

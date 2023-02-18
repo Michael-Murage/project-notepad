@@ -12,7 +12,7 @@ The app is web based and is built mainly using React.js. Technically,
  <img src="public/images/image2.png" alt="screenshot" width="600px" height="300px">
  <img src="public/images/image3.png" alt="screenshot" width="600px" height="300px">
  <img src="public/images/image4.png" alt="screenshot" width="600px" height="300px">
- <img src="public/images/image5.png" alt="screenshot" width="600px" height="300px">
+ <!-- <img src="public/images/image5.png" alt="screenshot" width="600px" height="300px"> -->
 
   ## Installation
 Ensure you have npm installed on your computer.
