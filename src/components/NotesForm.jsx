@@ -51,11 +51,20 @@ function NotesForm({ fetchData }) {
     return (
         <Form className='card-form card' onSubmit={submitNote} style={{width: '18rem', backgroundColor: randomColor(), marginTop: '2px'}}>
                 <div id='title-form'>
-                    <h2>Title: </h2>
-                    <input type='text' id='title-input' placeholder='Enter text' onChange={handleChange}/>
+                    {/* <h2>Title: </h2> */}
+                    <input 
+                        type='text' 
+                        id='title-input'  
+                        placeholder='Enter title' 
+                        onChange={handleChange}
+                    />
                 </div>
                 <div id='textarea-form'>
-                    <textarea placeholder='Enter note here...' id='textarea-input' onChange={handleChange}>
+                    <textarea 
+                        placeholder='Enter note content...' 
+                        id='textarea-input' 
+                        onChange={handleChange}
+                    >
                         
                     </textarea>
                 </div>

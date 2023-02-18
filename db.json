@@ -2,28 +2,13 @@
   "notes": [
     {
       "title": "",
-      "content": "\\profile editing * 4 + students performance posting",
+      "content": "npm init =>\nnpm install -D typescript =>\nnpx tsc --init =>\nnpm install typegoose/typegoose bcryptjs config cookie-parser dotenv express jsonwebtoken lodash mongoose redis ts-node-dev zod cors =>",
       "id": 1
     },
     {
       "title": "",
-      "content": "allow for enhancement - both official and officer",
+      "content": "Gebeya profile",
       "id": 2
-    },
-    {
-      "title": "",
-      "content": "provide list of students who have been allocated",
-      "id": 3
-    },
-    {
-      "title": "",
-      "content": "show schools student has been to in the past",
-      "id": 4
-    },
-    {
-      "title": "",
-      "content": "\\display a total of money spent on allocations at the bottom",
-      "id": 8
     }
   ]
 }

@@ -59,7 +59,7 @@ function Card({ note, randomColor, deleteNote, fetchData }) {
   return (
     <div className='card'  style={{width: 'auto', backgroundColor: randomColor()}}>
                 <div style={{display: 'flex', justifyContent: 'space-between'}}>
-                    <h2 onClick={changeTitle} className={conditionIsNone + ' ' + note?.id}>{!note.title ? 'Loading...' : note.title}</h2>
+                    <h2 onClick={changeTitle} className={conditionIsNone + ' ' + note?.id}>{!note.title ? '<no header>' : note.title}</h2>
                     {/* togglling between the element above and the element below based on click to edit */}
                     <Form onSubmit={submitEdit} >
                         <input onChange={controlEdit} 
@@ -68,10 +68,10 @@ function Card({ note, randomColor, deleteNote, fetchData }) {
                         className={conditionNotNone + ' ' + note?.id + ' title-input'} 
                         autoFocus />
                     </Form>
-                    <button className='delete-note' onClick={() => deleteNote(note?.id)}>X</button>
+                    <button className='delete-note text-danger' title='Delete note' onClick={() => deleteNote(note?.id)}>X</button>
                 </div>
 
-                <p className={conditionIsNone + ' ' + note?.id} onClick={changeTitle}>{!note.content ? 'Loading...' : note.content}</p>
+                <p className={conditionIsNone + ' ' + note?.id} onClick={changeTitle}>{!note.content ? '<no content>' : note.content}</p>
                 {/* togglling between the element above and the element below based on click to edit */}
                 <form className={conditionNotNone}>
                     <div className='textarea-form'>
