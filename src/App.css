@@ -10,7 +10,7 @@
   background-color: #ccc;
 }
 #textarea-input, .textarea-input{
-  resize: none;
+  /* resize: none; */
   align-items: center;
   width: 90%;
 }
@@ -34,14 +34,15 @@
   margin-top: 2px;
 }
 #submit-input, .submit-input{
-  width: 30%;
+  width: 40%;
   background-color: transparent;
   margin-bottom: 2px;
   border: transparent;
 }
-#submit-input:hover{
+#submit-input:hover, .submit-input:hover{
     /* filter: drop-shadow(0 0 2em #646cffaa); */
     box-shadow: 0 0 2em #545beeaa;
+    color: #fee;
 }
 
 #submit-form, .submit-form{

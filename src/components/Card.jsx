@@ -4,6 +4,9 @@ import { Form } from 'react-bootstrap'
 function Card({ note, randomColor, deleteNote, fetchData }) {
     const [isNone, setIsNone] = useState(false)
     const [edit, setEdit] = useState([note.title, note.content])
+    const [resize, setResize] = useState(false);
+    const [resizeValue, setResizeValue] = useState(false)
+
     let conditionIsNone = isNone ? 'none' : ''
     let conditionNotNone = !isNone ? 'none' : ''
     const focusRef = useRef()
@@ -75,11 +78,22 @@ function Card({ note, randomColor, deleteNote, fetchData }) {
                 {/* togglling between the element above and the element below based on click to edit */}
                 <form className={conditionNotNone}>
                     <div className='textarea-form'>
-                        <textarea className='textarea-input' onChange={controlEdit} ref={focusRef} value={edit[1]} onBlur={offFocus} >
+                        <textarea className='textarea-input' onChange={controlEdit} ref={focusRef} value={edit[1]} onBlur={offFocus}
+                            style={{resize: resize ? "both" : "none"}} 
+                        >
                         </textarea>
                     </div>
                     <div className='submit-form'>
-                        <input type='submit' id={note?.id} value='OK' className='submit-input' onClick={submitEdit}/>
+                        <input type='submit' id={note?.id} value='Save' className='submit-input' onClick={submitEdit}/>
+                        <input 
+                            type="button"
+                            title={resize ? "Resize is on" : "Resize is off"}
+                            value={resizeValue ? (resize ? "On" : "Off") : "Toggle resize" }
+                            className='submit-input' 
+                            onClick={()=>setResize(!resize)}
+                            onMouseOver={() => setResizeValue(true)}
+                            onMouseOut={() => setResizeValue(false)}
+                        />
                     </div>
                 </form>
 

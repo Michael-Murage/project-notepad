@@ -7,6 +7,8 @@ import useVal from './hooks/useVal'
 function NotesForm({ fetchData }) {
     const { val } = useVal()
     const [testNote, setTestNote] = useState([])
+    const [resize, setResize] = useState(false);
+    const [resizeValue, setResizeValue] = useState(false)
     
     useEffect(()=>{
         fetchData()
@@ -64,12 +66,21 @@ function NotesForm({ fetchData }) {
                         placeholder='Enter note content...' 
                         id='textarea-input' 
                         onChange={handleChange}
+                        style={{resize: resize ? "both" : "none"}} 
                     >
                         
                     </textarea>
                 </div>
                 <div id='submit-form'>
-                    <input type='submit' value='OK' id='submit-input'/>
+                    <input type='submit' value="Save" id='submit-input'/>
+                    <input type="button" 
+                        title={resize ? "Resize is on" : "Resize is off"}
+                        value={resizeValue ? (resize ? "On" : "Off") : "Toggle resize" }
+                        className='submit-input' 
+                        onClick={()=>setResize(!resize)}
+                        onMouseOver={()=>setResizeValue(true)}
+                        onMouseLeave={()=>setResizeValue(false)}
+                    />
                 </div>
         </Form>
   )
