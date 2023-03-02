@@ -35,10 +35,10 @@ Ensure you have npm installed on your computer.
  ## What works?
  You can basically add, edit or delete a note
 
- ## What doesn't work? (Limitations)
+ <!-- ## What doesn't work? (Limitations) -->
  <!-- 1. Having hosted the json server on Heroku, the data, after sometime resets to its original value. That is, the notes written by a user will reset to the very first note the user saw when accessing the app. -->
  
- 1. During production, the "database" is centralised for everyone using the application. Meaning what I write/edit/delete you'll see and vice-versa. For this, user authentication will separate between users.
+ <!-- 1. During production, the "database" is centralised for everyone using the application. Meaning what I write/edit/delete you'll see and vice-versa. For this, user authentication will separate between users. -->
 
 <!-- 
  This process will enable you to have your the project in your local environment but the link above (deployed link) should function similarly to running npm start. -->
